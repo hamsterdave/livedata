@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>Live Data Example</title>
+		<link rel="stylesheet" href="{{
+			url_for('static', filename='style.css')
+		}}"/>
+		<script type=text/javascript src="{{
+			url_for('static', filename='live.js')
+		}}"></script>
+	</head>
+	<body onload="get_data();">
+		<p>Sensor A: <span id="sensor_a">X</span></p>
+		<p>Sensor B: <span id="sensor_b">X</span></p>
+	</body>
+</html>
